@@ -37,26 +37,5 @@
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
         <div id="gpt-passback">
           <div id="supr-ad-container-47aaad2ac38b"></div>
-<script>
-    AotterTrekConfig = {
-     clientId: 'yEFcFoJaruNorh5RqtuR',
-     selector: '#supr-ad-container-47aaad2ac38b',
-     place: '68856f90-83b7-4f09-98d4-7f480842cb02',
-      fixed: 'bottom',
-      fixedCloseButton: true,
-      gamClickUrl: 'OK',
-              onAdLoad: () => {},
-              onAdFail: () => {
-                window.googletag = window.googletag || {cmd: []};
-                googletag.cmd.push(function() {
-                googletag.defineSlot('/33640845/BN_M_middle1_aseal_pb', [300, 250], 'gpt-passback').addService(googletag.pubads());
-                googletag.enableServices();
-                googletag.display('gpt-passback');
-                });
-              }
-            }
-!function(){"use strict";const{frameElement:e}=window,{parentElement:t}=e,{parentElement:n}=t,o=(o,r)=>{const{suprAdSrc:{width:i,height:s}}=o,{fixed:c,fixedGap:d="0"}=r;Object.assign(n.style,{position:"fixed",bottom:"0",right:"0",left:"0",zIndex:"9998",paddingTop:s/i*100+"%",["bottom"===c?"top":"bottom"]:"unset",[c]:d}),Object.assign(t.style,{position:"absolute",top:"0",right:"0",bottom:"0",left:"0"}),Object.assign(e.style,{position:"absolute",top:"0",left:"0",width:"100%",height:"100%"})},r=window.top||window,i=r.document,s=document,c="TREK_SESSION",d="https://static.aottercdn.com/trek/sdk/3.5.4/sdk.js",a="web_3.5.4",l=s.createElement("link");s.getElementById("trek-catrun-preconnect")||(l.href="https://tkcatrun.aotter.net",l.rel="preconnect",s.head.insertAdjacentElement("beforeend",l));const m=s.createElement("link");s.getElementById("trek-sdk-preload")||(m.href=d,m.rel="preload",m.as="script",s.head.insertAdjacentElement("beforeend",m));const p=(e="")=>e?((Number(e)^16*Math.random())>>Number(e)/4).toString(16):"10000000-1000-4000-8000-100000000000".replace(/[018]/g,p),f=()=>(i.cookie.split(";").find((e=>e.includes(c)))||"").split("=")[1],u=()=>{const e=(()=>{const e=`__tk${Math.random()}`,t=new Date(0),n=r.location.hostname.split("."),o=[];for(o.unshift(n.pop());n.length;){o.unshift(n.pop());const r=o.join("."),i=`${e}=;domain=${r}`;if(document.cookie=i,document.cookie.includes(e))return document.cookie=`${i};expires=${t}`,r}})(),t=new Date((new Date).getTime()+94608e6).toUTCString();i.cookie=`TREK_SESSION=${p()};path=/;domain=${e};expires=${t}`},k=new Promise((e=>{let t=f();t||(u(),t=f());const n=encodeURIComponent(JSON.stringify({device:{webSessionId:t},fetchNumber:1,returnBlank:!1,user:{},payload:{place:AotterTrekConfig.place,meta:{dr:i.referrer,dt:i.title,dl:i.location.href}},sdkVersionCode:10,sdkVersion:a}));fetch(`https://r2d2.aotter.net/web/fetch?q=${n}`,{method:"GET",headers:{"x-aotter-clientid":AotterTrekConfig.clientId,"x-aotter-version":a},credentials:"include",mode:"cors"}).then((e=>e.json())).then((({success:t=[]})=>{e(t)})).catch((()=>{e([])}))})),h=new Promise((e=>{!function(t,n,o,r,i){let s,c=n.getElementsByTagName(o)[0];n.getElementById(i)||(s=n.createElement(o),s.id=i,t[i]=t[i]||function(){(t[i].q=t[i].q||[]).push(arguments)},t[i].l=1*new Date,s.async=1,s.src="https://static.aottercdn.com/trek/sdk/3.5.4/sdk.js",s.onload=()=>{e()},c.parentNode.insertBefore(s,c))}(window,document,"script",0,"AotterTrek")}));Promise.all([k,h]).then((([e])=>{AotterTrek("init",AotterTrekConfig.clientId),AotterTrek("suprAd",AotterTrekConfig,e),AotterTrek("tkadn","PageView"),AotterTrek("send");const{fixed:i,gamClickUrl:c}=AotterTrekConfig,[d]=e,{frameElement:a}=window;i&&d&&a&&(o(d,AotterTrekConfig),(e=>{const{fixed:o,fixedCloseButton:r=!0}=e;if(!r)return;const i=document.createElement("div");Object.assign(i.style,{position:"absolute",left:"0",cursor:"pointer",zIndex:"9999",width:"24pt",height:"24pt",background:"#bbb",["bottom"===o?"top":"bottom"]:"-24pt"}),i.insertAdjacentHTML("afterbegin",'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>'),i.addEventListener("click",(()=>{n.remove()})),t.insertAdjacentElement("afterbegin",i)})(AotterTrekConfig)),c&&r.addEventListener("blur",(()=>{const e=a.contentWindow.document.querySelector("iframe");s.activeElement===e&&setTimeout((()=>{const e=new Image;e.src=c,e.onload=e.onerror=()=>{},r.focus()}))}))}))}();
-          </script>
-        </div>
 </body>
 </html>
