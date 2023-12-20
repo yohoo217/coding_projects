@@ -5,5 +5,7 @@ data class Room(
         var title: String?,
         var mem: String?,
         var desc: String?,
-        var imgSrc: String?
+        var imgSrc: String?,
+        var url: String?,
+        var price: String?
 )

@@ -26,7 +26,9 @@ class RoomRepository {
                         it["title"],
                         it["mem"],
                         it["desc"],
-                        it["imgSrc"]
+                        it["imgSrc"],
+                        it["url"],
+                        it["price"]
                 )
             }
 

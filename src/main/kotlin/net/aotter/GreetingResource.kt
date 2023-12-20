@@ -38,10 +38,10 @@ class GreetingResource {
         val photos = roomRepository.getRoomPhotos()
         logger.info("$photos")
         return Templates.hello()
-                .data("title", titles.joinToString(", "))
-                .data("description", "花蓮的一個好居處")
-                .data("member", "")
-                .data("photos", photos)
+            .data("title", titles.joinToString(", "))
+            .data("description", "花蓮的一個好居處")
+            .data("member", "")
+            .data("photos", photos)
     }
 
     @GET
@@ -56,8 +56,8 @@ class GreetingResource {
 
         return if (photo != null) {
             Templates.post()
-                    .data("title", titles.joinToString(", "))
-                    .data("id", id)
+                .data("title", titles.joinToString(", "))
+                .data("id", id)
         } else {
             throw NotFoundException()
         }
