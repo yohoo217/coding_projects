@@ -184,7 +184,7 @@
             <div class="col-lg-6 col-md-8 mx-auto">
                 <div class="col-12 px-0" style="position: relative;">
 
-                <h1 class="fw-light">{title}</h1><!--創建變量  title  的值-->
+                <h1 class="fw-light">流星花園</h1><!--創建變量  title  的值-->
                 <p class="fw-light">{description}</p><!--創一個變量  description  的值-->
                     <p class="fw-light">{member}</p><!--創一個變量  description  的值-->
                 <p>
@@ -202,27 +202,27 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 {#for photo in photos}
                 <div class="col">
-                    <a href="{{ photo.url }}">
-                        <div class="card shadow-sm">
-                            <img src="{photo.imgSrc}" alt="{ photo.desc }"/>
-                            <div class="card-body">
-                                <p class="card-text">房型：{photo.desc}</p>
-                                <p class="card-text">人數：{photo.mem}</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">查看房型</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">預定</button>
-                                    </div>
-                                    <small class="text-body-secondary">NT:1200</small>
+                    <div class="card shadow-sm">
+                        <img src="{photo.imgSrc}" alt="{photo.desc}"/>
+                        <div class="card-body">
+                            <p class="card-text">房型：{photo.desc}</p>
+                            <p class="card-text">人數：{photo.mem}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <input type="button" value="test" onclick="window.location.href='https://youtube.com'">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">預定</button>
                                 </div>
+                                <small class="text-body-secondary">{photo.price}</small>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 {/for}
             </div>
         </div>
     </div>
+
+
 
 
 </main>
